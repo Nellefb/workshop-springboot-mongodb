@@ -1,9 +1,11 @@
 package com.ellen.workshopmongo.dto;
 
 import com.ellen.workshopmongo.domain.User;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.io.Serializable;
 
+@JsonPropertyOrder({"id", "name", "email"})
 public class UserDTO implements Serializable {
 
     private String id;
